@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from "react-redux";
 
-class Todos extends Component {
+export default class Todos extends Component {
   render() {
     //const {todos} = this.props
     return (
@@ -12,9 +11,3 @@ class Todos extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  todos: state.todos
-}); 
-
-connect(mapStateToProps)(Todos)
-export default connect(mapStateToProps)(Todos);
